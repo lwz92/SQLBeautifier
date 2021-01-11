@@ -20,7 +20,7 @@ def getKeyword(url_key):
 
 url_src = r'C:\Users\514\Desktop\Jerry\Work\pys\src_file\handle_history.sql'      # source file path
 url_dest = r'C:\Users\514\Desktop\Jerry\Work\pys\desc_file\handle_history.sql'    # destination file path
-url_key = r'C:\Users\514\Desktop\Jerry\Work\pys\src_file\keyword.txt'             # keyword file path
+url_key = r'E:\keyword\keyword.txt'                                               # keyword file path
 
 try:
     f1 = open(url_src,encoding='UTF-8')
@@ -47,8 +47,9 @@ for i in line1:
                     f2.write(k)
                 else:
                     f2.write(k.lower())
-        # 判断j是否为当前行最后一个，是就跳过
+        # Judge whether j is the last one in the current line, and skip if yes
         if j != spt1[-1]:
             f2.write(' ')
     f2.write('\n')
 f2.close()
+print('Success:converted')
