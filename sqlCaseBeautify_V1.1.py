@@ -22,7 +22,7 @@ class Sql_Convert():
         # 1068x681为窗口大小，+10 +10 定义窗口弹出时的默认展示位置
         self.init_window.geometry('1068x681+10+10')
         # 窗口背景色，其他背景色见：blog.csdn.net/chl0000/article/details/7657887
-        self.init_window["bg"] = "lightBlue"
+        self.init_window["bg"] = "SkyBlue"
         self.init_window.attributes("-alpha", 5)  # 虚化，值越小虚化程度越高
         # 标签
         self.src_data_label = Label(self.init_window, text="源文件路径", width=15, bg="GhostWhite", fg = "DarkCyan")
@@ -142,7 +142,7 @@ class Sql_Convert():
 
 def program_start():
     init_window = Tk()  # 实例化出一个父窗口
-    url_key = r'E:\keyword\keyword.txt'
+    url_key = r'D:\sqlFile\src\keyword.txt'
     LWZ_PORTAL = Sql_Convert(init_window, url_key)
     # 设置根窗口默认属性
     LWZ_PORTAL.set_init_window()
