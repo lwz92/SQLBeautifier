@@ -1,0 +1,4 @@
+step1：首先把keyword文件保存在D:\sqlFile\src下
+step2：创建ScrolledText文件，因为V2.0依赖于ScrolledText文件中的ScrolledText类
+step3：安装打包库pyinstaller
+step4：打包成exe文件：命令行执行 pyinstaller -F -w 【sqlCaseBeautify_V2.0.py文件路径】 -p 【ScrolledText.py文件路径】
