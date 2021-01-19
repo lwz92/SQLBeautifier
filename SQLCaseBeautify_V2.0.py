@@ -9,6 +9,7 @@ from tkinter import *
 import time
 from ScrolledText import ScrolledText
 
+
 class Sql_Convert():
     def __init__(self, init_window, url_key):
         self.init_window = init_window
@@ -92,6 +93,7 @@ class Sql_Convert():
     # 功能函数
     def beautify_sql_case(self):
         self.dest_data_text.config(state=NORMAL)
+        self.dest_data_text.delete(1.0, END)
         # 获取输入内容
         src = self.src_data_text.get(1.0, END).strip()  # 加.encode()输入内容为byte类型
         # 换行分割
